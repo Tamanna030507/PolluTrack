@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# 🇮🇳 BreatheSmart — Autonomous Civic Air Intelligence
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> *"Not a monitoring tool. The first autonomous civic intelligence system that sees, predicts, acts — and speaks every Indian's language."*
 
-## Available Scripts
+## What is BreatheSmart?
 
-In the project directory, you can run:
+BreatheSmart is  autonomous civic AI system for air quality. It doesn't just show you AQI — it automatically files complaints, dispatches trucks, alerts schools, and serves legal notices in **47 seconds. Zero humans involved.**
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Citizen Mode
+- Real-time AQI of selected city
+- Pollution status — Good / Moderate / Poor / Hazardous
+- Dominant pollutant display
+- Pollutant breakdown — PM2.5, PM10, NO2, SO2, O3, CO
+- Full 24-hour AQI trend graph with rush hour patterns
+- Health Impact Calculator — "Today = smoking 3 cigarettes"
+- Lifetime Breathe Score
+- India-wide pollution heatmap
 
-### `npm test`
+### Authority Mode
+- City-wise pollution ranking with severity badges
+- High-risk zones highlighted with Action Required indicators
+- Auto-generated policy recommendations
+- Industrial Compliance Watchdog — flags repeat offender factories
+- Ambulance routing advisor — avoids high-AQI corridors
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### PollutionBot — World's First Autonomous Civic AI Agent
+- Ward spike detected → complaint filed → truck dispatched → school alerted → legal notice served
+- **47 seconds. Zero humans. Zero delay. Zero excuse.**
+- Every action logged, timestamped, publicly visible
 
-### `npm run build`
+### Multilingual Voice Assistant
+- Speak in Hindi, Marathi, Gujarati, Tamil, Telugu & more
+- Ask: "Aaj bahar jaana safe hai kya?" — get instant answer in same language
+- Powered by Claude AI Web Speech API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Layer | Technology |
+|-------|-----------|
+| Frontend | React.js, Chart.js, React-Leaflet |
+| Backend | Node.js, Express.js |
+| AQI Data | AQICN Real-Time API |
+| Maps | OpenStreetMap + CartoDB Dark |
+| Voice | Web Speech API + Claude AI |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Setup & Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Backend
+```bash
+cd Backend
+npm install
+node server.js
+```
+Runs on `http://localhost:5000`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Frontend
+```bash
+cd frontend
+npm install
+npm start
+```
+Runs on `http://localhost:3000`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Project Structure
+```
+BreatheSmart/
+├── Backend/
+│   ├── server.js
+│   └── package.json
+├── frontend/
+│   ├── src/
+│   │   ├── App.js
+│   │   ├── App.css
+│   │   └── index.js
+│   └── package.json
+└── README.md
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## API Endpoints
 
-### Code Splitting
+| Endpoint | Description |
+|----------|-------------|
+| `GET /api/city?name=Delhi` | Real-time AQI for a city |
+| `GET /api/aqi-history?name=Delhi` | Last 24 AQI readings |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*BreatheSmart © 2025 — Every breath counted. Every second matters.*
