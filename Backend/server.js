@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = 5000;
+const PORT = 5001;
 const AQI_TOKEN = "f03e7dc97296ee6ab3bee6ecdc5bfc3f3fb06a3e";
 
 /*
