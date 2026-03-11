@@ -86,12 +86,9 @@ export default function App() {
   const [data, setData] = useState(null);
   const [trend, setTrend] = useState(Array(24).fill(null));
   const [loading, setLoading] = useState(false);
-  const [botIndex, setBotIndex] = useState(0);
   const [visibleLogs, setVisibleLogs] = useState([]);
   const [ticker, setTicker] = useState(0);
-  const [scanLine, setScanLine] = useState(0);
   const [glitching, setGlitching] = useState(false);
-  const botRef = useRef(null);
 
   // Voice assistant state
   const [voiceListening, setVoiceListening] = useState(false);
